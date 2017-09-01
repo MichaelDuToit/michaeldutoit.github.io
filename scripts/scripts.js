@@ -71,9 +71,6 @@ if ('serviceWorker' in navigator){
         navigator.serviceWorker.register('/service-worker.js', {scope: '/'}).then(function(registration){
             registration.update();
             console.log('ServiceWorker registration successfull with scope: ', registration.scope);
-            registration.addEventListener('updatefound', (function(){
-                var newWorker = registration.installing;
-            })
         }).catch(function(err){
             console.log('ServiceWorker registration failed: ', err);
         });

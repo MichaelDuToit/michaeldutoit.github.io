@@ -65,7 +65,7 @@ self.addEventListener('fetch', event => {
         event.respondWith(
             caches.match(request)
             .then(response => {
-                return response || fetch(request)
+                return fetch(request) || response
                     .then( response => {
                         addToCache(assetsCacheName, request, response.clone());
                         return response;
