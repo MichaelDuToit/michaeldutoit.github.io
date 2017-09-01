@@ -68,7 +68,7 @@ toTopBtn.addEventListener('click', scrollToTop);
 
 if ('serviceWorker' in navigator){
     window.addEventListener('load', function(){
-        navigator.serviceWorker.register('/service-worker.js', {scope: '/'}).then(function(registration){
+        navigator.serviceWorker.register('/sw.js', {scope: '/'}).then(function(registration){
             console.log('ServiceWorker registration successfull with scope: ', registration.scope);
         }).catch(function(err){
             console.log('ServiceWorker registration failed: ', err);
