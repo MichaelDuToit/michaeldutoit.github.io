@@ -25,7 +25,7 @@ function addToCache(cacheName, request, response){
 function clearCaches(){
     return caches.keys().then(function(keys){
         return Promise.all(keys.filter(function(key){
-            return key.indexOf(version) !== 0;
+            return key.indexOf(CACHE_NAME) !== 0;
         }).map(function(key){
             return caches.delete(key);
         })
