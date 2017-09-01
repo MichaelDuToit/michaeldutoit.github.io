@@ -1,7 +1,7 @@
-const version = 'MDT-v2-';
-const coreCacheName = version + 'core';
-const pagesCacheName = version + 'pages';
-const assetsCacheName = version + 'assets';
+const CACHE_NAME = 'MDT-v2-';
+const coreCacheName = CACHE_NAME + 'core';
+const pagesCacheName = CACHE_NAME + 'pages';
+const assetsCacheName = CACHE_NAME + 'assets';
 
 const coreCacheUrls = [
     '/js/scripts.js',
