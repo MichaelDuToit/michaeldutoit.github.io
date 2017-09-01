@@ -4,7 +4,7 @@ const pagesCacheName = CACHE_NAME + 'pages';
 const assetsCacheName = CACHE_NAME + 'assets';
 
 const coreCacheUrls = [
-    '/js/scripts.js',
+    '/scripts/scripts.js',
     '/css/main.css',
     '/images/woodland.jpg',
     '/offline/',
